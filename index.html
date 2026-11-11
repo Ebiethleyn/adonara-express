@@ -1,0 +1,3081 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Adonara Express — Ekspedisi Kargo Laut & Darat Jakarta ke NTT (Maumere, Larantuka, Adonara, Solor, Lembata, Kupang) serta Adonara Tour & Travel. Cepat, Aman, Amanah." />
+  <meta name="keywords"
+    content="Adonara Express, Ekspedisi Jakarta NTT, Kargo Laut Pelni, Tol Laut, Kirim Motor NTT, Ekspedisi Lembata, JNE Lembata, Tour Travel Adonara" />
+  <title>Adonara Express | Jasa Ekspedisi Kargo Jakarta - NTT &amp; Tour Travel</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       COLOR PALETTE & CSS VARIABLES
+       Base Palette: #7671fa, #e5eaf3, #07244c, #7e7f9c
+    ============================================================ */
+    :root {
+      /* Shared Brand Accents */
+      --brand-accent: #7671fa;
+      --brand-accent-hover: #5e59f2;
+      --brand-accent-light: #9490fc;
+      --brand-accent-pale: rgba(118, 113, 250, 0.12);
+      --brand-navy: #07244c;
+      --brand-ice: #e5eaf3;
+      --brand-slate: #7e7f9c;
+
+      --ff-heading: 'Outfit', sans-serif;
+      --ff-body: 'Plus Jakarta Sans', sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --max-w: 1240px;
+    }
+
+    /* DARK MODE (Default per deep-sea cargo vibe) */
+    html[data-theme="dark"] {
+      --bg-body: #07244c;
+      --bg-surface: #0a2d5c;
+      --bg-card: rgba(13, 49, 98, 0.65);
+      --bg-card-hover: rgba(17, 60, 118, 0.85);
+      --bg-alt: #051b3a;
+      --border-color: rgba(229, 234, 243, 0.12);
+      --border-accent: rgba(118, 113, 250, 0.35);
+      --text-title: #e5eaf3;
+      --text-body: #cfd8e8;
+      --text-muted: #7e7f9c;
+      --nav-bg: rgba(7, 36, 76, 0.92);
+      --nav-border: rgba(118, 113, 250, 0.2);
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.35);
+      --shadow-glow: 0 0 30px rgba(118, 113, 250, 0.25);
+      --badge-bg: rgba(118, 113, 250, 0.18);
+      --badge-text: #e5eaf3;
+      --card-highlight: rgba(118, 113, 250, 0.08);
+      --table-stripe: rgba(10, 45, 92, 0.5);
+    }
+
+    /* LIGHT MODE */
+    html[data-theme="light"] {
+      --bg-body: #f4f7fc;
+      --bg-surface: #ffffff;
+      --bg-card: #ffffff;
+      --bg-card-hover: #e5eaf3;
+      --bg-alt: #e5eaf3;
+      --border-color: rgba(126, 127, 156, 0.22);
+      --border-accent: rgba(118, 113, 250, 0.3);
+      --text-title: #07244c;
+      --text-body: #283955;
+      --text-muted: #7e7f9c;
+      --nav-bg: rgba(244, 247, 252, 0.92);
+      --nav-border: rgba(126, 127, 156, 0.2);
+      --shadow-card: 0 10px 30px rgba(7, 36, 76, 0.07);
+      --shadow-glow: 0 0 30px rgba(118, 113, 250, 0.18);
+      --badge-bg: #e5eaf3;
+      --badge-text: #07244c;
+      --card-highlight: #ffffff;
+      --table-stripe: rgba(229, 234, 243, 0.6);
+    }
+
+    /* Reset & Base */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--ff-body);
+      background-color: var(--bg-body);
+      color: var(--text-body);
+      line-height: 1.7;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: var(--ff-heading);
+      color: var(--text-title);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: clamp(1.2rem, 4vw, 2.5rem);
+    }
+
+    /* Utility typography */
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brand-accent);
+      margin-bottom: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 18px;
+      height: 2px;
+      background: var(--brand-accent);
+      border-radius: 2px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title em {
+      font-style: normal;
+      color: var(--brand-accent);
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      line-height: 1.8;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.8rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--ff-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--brand-accent);
+      color: #ffffff;
+      box-shadow: 0 4px 18px rgba(118, 113, 250, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--brand-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 26px rgba(118, 113, 250, 0.45);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-title);
+      border: 1px solid var(--border-accent);
+    }
+
+    .btn-outline:hover {
+      background: var(--brand-accent-pale);
+      border-color: var(--brand-accent);
+      color: var(--brand-accent);
+      transform: translateY(-2px);
+    }
+
+    .btn-wa {
+      background: #25d366;
+      color: #ffffff;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-wa:hover {
+      background: #20ba59;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      border: 1px solid var(--border-accent);
+    }
+
+    /* Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1.1rem 0;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    #navbar.scrolled {
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--nav-border);
+      box-shadow: var(--shadow-card);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-brand-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--brand-accent), #07244c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+      border: 1px solid rgba(229, 234, 243, 0.3);
+      box-shadow: 0 4px 14px rgba(118, 113, 250, 0.35);
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand-name {
+      font-family: var(--ff-heading);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-title);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+
+    .nav-brand-tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--brand-accent);
+      text-transform: uppercase;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+    }
+
+    .nav-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: var(--transition);
+      position: relative;
+      padding: 0.3rem 0;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--brand-accent);
+      transition: width 0.25s ease;
+      border-radius: 2px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--text-title);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    /* THEME TOGGLE BUTTON */
+    .theme-toggle-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-title);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .theme-toggle-btn:hover {
+      background: var(--brand-accent-pale);
+      border-color: var(--brand-accent);
+      color: var(--brand-accent);
+      transform: rotate(15deg);
+    }
+
+    .theme-toggle-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text-title);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Mobile menu overlay */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: var(--bg-body);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu .nav-link {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    /* ============================================================
+       HERO SECTION
+    ============================================================ */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 7rem;
+      padding-bottom: 5rem;
+      overflow: hidden;
+      background: var(--bg-body);
+    }
+
+    .hero-glow-1 {
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(118, 113, 250, 0.22) 0%, transparent 70%);
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .hero-glow-2 {
+      position: absolute;
+      bottom: -10%;
+      left: -5%;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(7, 36, 76, 0.4) 0%, transparent 70%);
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3.5rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-title {
+      font-size: clamp(2.6rem, 5.2vw, 4.2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-title .highlight {
+      background: linear-gradient(135deg, var(--brand-accent), #a39ffc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      max-width: 580px;
+    }
+
+    .hero-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.9rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-title);
+    }
+
+    .hero-pill svg {
+      color: var(--brand-accent);
+      flex-shrink: 0;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* Hero Right Card */
+    .hero-card-preview {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-card), var(--shadow-glow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-preview::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--brand-accent), #e5eaf3);
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1rem;
+    }
+
+    .preview-route {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .route-node {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-title);
+    }
+
+    .route-arrow {
+      color: var(--brand-accent);
+      font-weight: 700;
+    }
+
+    .preview-destinations {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .dest-chip {
+      background: var(--brand-accent-pale);
+      color: var(--brand-accent);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(118, 113, 250, 0.2);
+    }
+
+    .preview-stats-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .preview-stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.6rem;
+      font-size: 0.88rem;
+    }
+
+    .preview-stat-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .stat-label-muted {
+      color: var(--text-muted);
+    }
+
+    .stat-val-strong {
+      font-weight: 700;
+      color: var(--text-title);
+    }
+
+    .stat-highlight {
+      color: #22c55e;
+      font-weight: 700;
+    }
+
+    /* ============================================================
+       SECTION: ABOUT & PROFILE
+    ============================================================ */
+    .section-wrap {
+      padding: clamp(4.5rem, 8vw, 7.5rem) 0;
+      position: relative;
+    }
+
+    .bg-surface-tint {
+      background-color: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-cards-stack {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    .about-feature-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.6rem;
+      transition: var(--transition);
+      box-shadow: var(--shadow-card);
+    }
+
+    .about-feature-box:hover {
+      border-color: var(--brand-accent);
+      transform: translateY(-4px);
+    }
+
+    .box-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: var(--radius-sm);
+      background: var(--brand-accent-pale);
+      color: var(--brand-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .about-feature-box h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-feature-box p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .tagline-banner {
+      margin-top: 2rem;
+      padding: 1.4rem 1.8rem;
+      background: linear-gradient(135deg, rgba(118, 113, 250, 0.15), rgba(7, 36, 76, 0.2));
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .tagline-banner svg {
+      color: var(--brand-accent);
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+    }
+
+    .tagline-text h5 {
+      font-size: 1.05rem;
+      color: var(--text-title);
+      margin-bottom: 0.2rem;
+    }
+
+    .tagline-text p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       SECTION: SERVICES
+    ============================================================ */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 2.2rem 1.8rem;
+      transition: var(--transition);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-card);
+    }
+
+    .service-card:hover {
+      border-color: var(--brand-accent);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .service-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-sm);
+      background: var(--brand-accent-pale);
+      color: var(--brand-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.4rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .service-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+
+    .service-meta {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--brand-accent);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ============================================================
+       SECTION: SPECIAL PARTNERSHIP & LEMBATA
+    ============================================================ */
+    .special-card-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .special-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 2.4rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .special-badge-top {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      background: var(--brand-accent);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+    }
+
+    .special-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      padding-right: 3rem;
+    }
+
+    .special-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .special-highlights {
+      list-style: none;
+      margin-bottom: 1.8rem;
+    }
+
+    .special-highlights li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+      color: var(--text-body);
+      margin-bottom: 0.7rem;
+    }
+
+    .special-highlights li svg {
+      color: #22c55e;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .location-box {
+      background: var(--bg-surface);
+      border: 1px dashed var(--border-accent);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      font-size: 0.84rem;
+      color: var(--text-body);
+      margin-bottom: 1.5rem;
+    }
+
+    .location-box strong {
+      color: var(--brand-accent);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ============================================================
+       SECTION: PRICE COMPARISON (KM TIDAR)
+    ============================================================ */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+      align-items: stretch;
+    }
+
+    .compare-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .compare-card.winner {
+      border: 2px solid var(--brand-accent);
+      background: linear-gradient(180deg, var(--bg-card) 0%, rgba(118, 113, 250, 0.05) 100%);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .winner-ribbon {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--brand-accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.4rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 14px rgba(118, 113, 250, 0.4);
+    }
+
+    .compare-header {
+      text-align: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 1.8rem;
+    }
+
+    .compare-provider {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .compare-card.winner .compare-provider {
+      color: var(--brand-accent);
+    }
+
+    .compare-price {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--text-title);
+      font-family: var(--ff-heading);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .compare-price span {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .compare-saving-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #22c55e;
+      background: rgba(34, 197, 94, 0.12);
+      display: inline-block;
+      padding: 0.25rem 0.8rem;
+      border-radius: var(--radius-full);
+      margin-top: 0.5rem;
+    }
+
+    .compare-list {
+      list-style: none;
+      flex-grow: 1;
+      margin-bottom: 2rem;
+    }
+
+    .compare-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px dashed var(--border-color);
+      font-size: 0.92rem;
+    }
+
+    .compare-item:last-child {
+      border-bottom: none;
+    }
+
+    .compare-item svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .icon-check {
+      color: #22c55e;
+    }
+
+    .icon-cross {
+      color: #ef4444;
+    }
+
+    /* Interactive Calculator */
+    .calculator-box {
+      margin-top: 3.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 2.4rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .calc-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .calc-inputs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 1.2rem;
+      align-items: end;
+    }
+
+    .calc-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .calc-input,
+    .calc-select {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      color: var(--text-title);
+      font-family: var(--ff-body);
+      font-size: 0.95rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .calc-input:focus,
+    .calc-select:focus {
+      border-color: var(--brand-accent);
+      box-shadow: 0 0 0 3px var(--brand-accent-pale);
+    }
+
+    .calc-result-bar {
+      margin-top: 1.8rem;
+      padding: 1.2rem 1.6rem;
+      background: var(--brand-accent-pale);
+      border-radius: var(--radius-md);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .calc-result-text {
+      font-size: 0.95rem;
+      color: var(--text-body);
+    }
+
+    .calc-result-total {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--brand-accent);
+      font-family: var(--ff-heading);
+    }
+
+    /* ============================================================
+       SECTION: SHIPPING SCHEDULE & SHIPS
+    ============================================================ */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .schedule-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .schedule-card:hover {
+      border-color: var(--brand-accent);
+      transform: translateY(-4px);
+    }
+
+    .schedule-type {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .schedule-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .schedule-detail-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+      font-size: 0.88rem;
+      border-bottom: 1px dashed var(--border-color);
+      padding-bottom: 0.4rem;
+    }
+
+    .schedule-detail-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .closing-badge {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.5rem 0.9rem;
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #ef4444;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ============================================================
+       SECTION: ADONARA TOUR & TRAVEL
+    ============================================================ */
+    .tour-fleet-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .car-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+
+    .car-card:hover {
+      border-color: var(--brand-accent);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .car-img-wrap {
+      height: 230px;
+      position: relative;
+      background: #0f172a;
+      overflow: hidden;
+    }
+
+    .car-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .car-card:hover .car-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .car-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: var(--brand-navy);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(229, 234, 243, 0.3);
+    }
+
+    .car-body {
+      padding: 1.8rem;
+    }
+
+    .car-body h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .car-specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .car-spec-item {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 0.3rem 0.7rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .tour-perks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+
+    .tour-perk {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-title);
+    }
+
+    .tour-perk svg {
+      color: var(--brand-accent);
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       SECTION: CONTACT & BRANCHES
+    ============================================================ */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .contact-branches {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .branch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+
+    .branch-card:hover {
+      border-color: var(--brand-accent);
+    }
+
+    .branch-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .branch-card h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .branch-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .contact-phone-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .phone-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.65rem 0.9rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      color: var(--text-title);
+      transition: var(--transition);
+    }
+
+    .phone-item:hover {
+      border-color: #25d366;
+      color: #25d366;
+      transform: translateY(-2px);
+    }
+
+    .phone-item svg {
+      color: #25d366;
+      flex-shrink: 0;
+    }
+
+    /* Fast Consultation Form */
+    .contact-form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-title);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      color: var(--text-title);
+      font-family: var(--ff-body);
+      font-size: 0.92rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--brand-accent);
+      box-shadow: 0 0 0 3px var(--brand-accent-pale);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border-color);
+      padding: 4.5rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .footer-logo {
+      font-family: var(--ff-heading);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text-title);
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--brand-accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-col h5 {
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+      color: var(--text-title);
+    }
+
+    .footer-links li {
+      margin-bottom: 0.7rem;
+    }
+
+    .footer-links a {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--brand-accent);
+      padding-left: 4px;
+    }
+
+    /* Social Media Icons */
+    .footer-socials {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .social-link svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
+      transition: transform 0.25s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(118, 113, 250, 0.35);
+    }
+
+    .social-link[data-brand="instagram"]:hover {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .social-link[data-brand="tiktok"]:hover {
+      background: #000000;
+      color: #fff;
+      border-color: #00f2fe;
+      box-shadow: 0 4px 15px rgba(0, 242, 254, 0.4);
+    }
+
+    .social-link[data-brand="facebook"]:hover {
+      background: #1877f2;
+      color: #fff;
+      border-color: #1877f2;
+    }
+
+    .social-link[data-brand="whatsapp"]:hover {
+      background: #25d366;
+      color: #fff;
+      border-color: #25d366;
+    }
+
+    .social-link[data-brand="youtube"]:hover {
+      background: #ff0000;
+      color: #fff;
+      border-color: #ff0000;
+    }
+
+    .social-link[data-brand="x"]:hover {
+      background: #0f1419;
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    /* Floating WhatsApp Button */
+    #wa-floating {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25d366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+    }
+
+    #wa-floating:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    #wa-floating svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+
+    /* Back to top */
+    #back-to-top {
+      position: fixed;
+      bottom: 96px;
+      right: 26px;
+      z-index: 9998;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-title);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+      box-shadow: var(--shadow-card);
+    }
+
+    #back-to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #back-to-top:hover {
+      background: var(--brand-accent);
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    /* ============================================================
+       RESPONSIVE BREAKPOINTS
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .schedule-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .nav-menu,
+      .nav-actions .btn-primary {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .special-card-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tour-fleet-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .schedule-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .calc-inputs-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-cards-stack {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-phone-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar" aria-label="Main Navigation">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Adonara Express">
+        <div class="nav-brand-logo">A</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Adonara Express</span>
+          <span class="nav-brand-tag">Cepat · Aman · Amanah</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a class="nav-link" href="#about" role="menuitem">Tentang</a></li>
+        <li role="none"><a class="nav-link" href="#services" role="menuitem">Layanan Kargo</a></li>
+        <li role="none"><a class="nav-link" href="#special-lembata" role="menuitem">Mitra Lembata</a></li>
+        <li role="none"><a class="nav-link" href="#pricing" role="menuitem">Tarif &amp; Simulasi</a></li>
+        <li role="none"><a class="nav-link" href="#schedule" role="menuitem">Jadwal Kapal</a></li>
+        <li role="none"><a class="nav-link" href="#tour-travel" role="menuitem">Tour &amp; Travel</a></li>
+        <li role="none"><a class="nav-link" href="#contact" role="menuitem">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Ganti mode gelap/terang"
+          title="Ganti Mode Gelap / Terang">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- <a href="https://wa.me/6285210007544?text=Halo%20Adonara%20Express%2C%20saya%20ingin%20konsultasi%20pengiriman%20barang"
+           target="_blank" rel="noopener" class="btn btn-primary" style="padding:0.65rem 1.3rem;font-size:0.82rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z"/>
+          </svg>
+          Chat WhatsApp
+        </a> -->
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="nav-link" href="#about" onclick="closeMobile()">Tentang Kami</a>
+    <a class="nav-link" href="#services" onclick="closeMobile()">Layanan Kargo</a>
+    <a class="nav-link" href="#special-lembata" onclick="closeMobile()">Mitra Lembata</a>
+    <a class="nav-link" href="#pricing" onclick="closeMobile()">Tarif &amp; Simulasi</a>
+    <a class="nav-link" href="#schedule" onclick="closeMobile()">Jadwal Kapal</a>
+    <a class="nav-link" href="#tour-travel" onclick="closeMobile()">Tour &amp; Travel</a>
+    <a class="nav-link" href="#contact" onclick="closeMobile()">Kontak &amp; Alamat</a>
+    <div style="margin-top:1rem;">
+      <a href="https://wa.me/6285210007544" target="_blank" rel="noopener" class="btn btn-wa">
+        Hubungi WhatsApp (0852-1000-7544)
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-text-content">
+          <div class="hero-eyebrow">
+            <span class="badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Ekspedisi Kargo Laut &amp; Darat serta Tour &amp; Travel
+            </span>
+            <span class="badge" style="border-color:var(--border-color);">Rute Jakarta ⇄ NTT</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Kirim bukan cuma barang, <br><span class="highlight">tapi rasa aman.</span>
+          </h1>
+
+          <p class="hero-subtitle reveal reveal-delay-1">
+            <strong>Adonara Express (Cepat, Aman, Amanah)</strong> — Spesialis jasa ekspedisi terpercaya &amp; ticketing
+            rute Jakarta ke seluruh wilayah Nusa Tenggara Timur (NTT) via Kapal Pelni dan Tol Laut.
+          </p>
+
+          <div class="hero-badges-row reveal reveal-delay-2">
+            <div class="hero-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              Jadwal Rutin &amp; Terencana
+            </div>
+            <div class="hero-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              Harga All-In Tanpa Buruh Tambahan
+            </div>
+            <div class="hero-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              </svg>
+              Door to Door Service JNE Lembata
+            </div>
+          </div>
+
+          <div class="hero-cta reveal reveal-delay-3">
+            <a href="https://wa.me/6285210007544?text=Halo%20Adonara%20Express%2C%20saya%20ingin%20tanya%20jadwal%20dan%20kirim%20barang"
+              target="_blank" rel="noopener" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z" />
+              </svg>
+              Konsultasi Pengiriman
+            </a>
+            <a href="#pricing" class="btn btn-outline">
+              Cek Tarif &amp; Bandingkan
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Card Preview -->
+        <div class="hero-card-preview reveal reveal-delay-2">
+          <div class="preview-header">
+            <div>
+              <span class="badge" style="margin-bottom:0.4rem;">Rute Utama</span>
+              <div class="preview-route">
+                <span class="route-node">JAKARTA</span>
+                <span class="route-arrow">➔</span>
+                <span class="route-node">NTT</span>
+              </div>
+            </div>
+            <div style="text-align:right;">
+              <span style="font-size:0.75rem;color:var(--text-muted);display:block;">Tarif Mulai</span>
+              <span style="font-size:1.4rem;font-weight:800;color:var(--brand-accent);">Rp20.000<small
+                  style="font-size:0.75rem;font-weight:500;">/kg</small></span>
+            </div>
+          </div>
+
+          <div
+            style="margin-bottom:0.7rem;font-size:0.8rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">
+            Cakupan Wilayah Tujuan:
+          </div>
+          <div class="preview-destinations">
+            <span class="dest-chip">📍 Maumere</span>
+            <span class="dest-chip">📍 Larantuka</span>
+            <span class="dest-chip">📍 Adonara</span>
+            <span class="dest-chip">📍 Solor</span>
+            <span class="dest-chip">📍 Lembata</span>
+            <span class="dest-chip">📍 Kupang</span>
+          </div>
+
+          <div class="preview-stats-box">
+            <div class="preview-stat-row">
+              <span class="stat-label-muted">Metode Transportasi:</span>
+              <span class="stat-val-strong">Kapal Pelni &amp; Tol Laut</span>
+            </div>
+            <div class="preview-stat-row">
+              <span class="stat-label-muted">Biaya Buruh / Bongkar:</span>
+              <span class="stat-highlight">Gratis (All-In Bersih)</span>
+            </div>
+            <div class="preview-stat-row">
+              <span class="stat-label-muted">Layanan Lembata:</span>
+              <span class="stat-val-strong">Door to Door via JNE</span>
+            </div>
+            <div class="preview-stat-row">
+              <span class="stat-label-muted">Armada Wisata Adonara:</span>
+              <span class="stat-val-strong">Toyota Calya &amp; Suzuki XL7</span>
+            </div>
+          </div>
+
+          <a href="#schedule" class="btn btn-outline" style="width:100%;font-size:0.85rem;">
+            Lihat Jadwal Kapal Agustus 2026 ➔
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1: TENTANG & PROFIL UMUM
+  ============================================================ -->
+  <section id="about" class="section-wrap bg-surface-tint">
+    <div class="container">
+      <div class="about-layout">
+        <div>
+          <span class="section-label">Informasi Umum &amp; Profil</span>
+          <h2 class="section-title">
+            Jembatan Logistik Terpercaya <br><em>Jakarta ke Seluruh NTT</em>
+          </h2>
+          <p class="section-sub" style="margin-bottom:1.5rem;">
+            <strong>Adonara Express</strong> hadir sebagai solusi pengiriman kargo laut dan darat yang berlandaskan
+            komitmen <strong>Cepat, Aman, dan Amanah</strong>. Kami memahami setiap kiriman Anda bukan hanya sekadar
+            paket, melainkan amanah berharga dan penghubung kasih antara perantau dan sanak keluarga di kampung halaman.
+          </p>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem;">
+            Melayani jasa ekspedisi terintegrasi serta pemesanan tiket resmi, menjangkau seluruh gugusan pulau di NTT
+            dengan ketepatan jadwal kapal dan penanganan ekstra hati-hati.
+          </p>
+
+          <div class="tagline-banner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <div class="tagline-text">
+              <h5>Slogan Kami</h5>
+              <p>"Kirim bukan cuma barang, tapi rasa aman."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Core Pillars -->
+        <div class="about-cards-stack">
+          <div class="about-feature-box">
+            <div class="box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h4>Cepat &amp; Terjadwal</h4>
+            <p>Pengiriman terjadwal secara periodik dengan monitoring kapal Pelni dan Tol Laut sehingga barang sampai
+              tepat waktu.</p>
+          </div>
+
+          <div class="about-feature-box">
+            <div class="box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h4>Aman Terlindungi</h4>
+            <p>SOP penanganan muatan profesional. Kendaraan dan perabot dikemas aman agar terhindar dari benturan selama
+              pelayaran.</p>
+          </div>
+
+          <div class="about-feature-box">
+            <div class="box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h4>Amanah &amp; Transparan</h4>
+            <p>Tarif jujur All-In tanpa biaya siluman di pelabuhan tujuan. Harga pasti yang dihitung secara adil dan
+              terpercaya.</p>
+          </div>
+
+          <div class="about-feature-box">
+            <div class="box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 12l-4-4-4 4M12 16V8"></path>
+              </svg>
+            </div>
+            <h4>Jangkauan 6 Wilayah</h4>
+            <p>Rute menyeluruh mencakup Maumere, Larantuka, Adonara, Solor, Lembata, hingga ibu kota Kupang.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2: LAYANAN EKSPEDISI & PENGIRIMAN MUATAN
+  ============================================================ -->
+  <section id="services" class="section-wrap">
+    <div class="container">
+      <div style="text-align:center;max-width:700px;margin-inline:auto;">
+        <span class="section-label">Layanan Ekspedisi</span>
+        <h2 class="section-title">Muatan Skala <em>Kecil hingga Besar</em></h2>
+        <p class="section-sub" style="margin-inline:auto;">
+          Adonara Express menerima berbagai kategori barang kiriman via jalur laut dengan Kapal Pelni dan Tol Laut untuk
+          menjamin kapasitas serta keamanan maksimal.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3>Barang Paket &amp; Titipan</h3>
+          <p>Kirim paket harian, oleh-oleh, dokumen penting, atau titipan keluarga dengan estimasi terukur dan tracking
+            berkala.</p>
+          <div class="service-meta">
+            <span>Muatan Retail &amp; Dus</span> ➔
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3>Barang Pindahan</h3>
+          <p>Layanan pindahan rumah, kos, hingga kantor dari Jakarta ke NTT. Penataan muatan rapi dan aman hingga sampai
+            tujuan.</p>
+          <div class="service-meta">
+            <span>Perabot &amp; Elektronik</span> ➔
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="5" cy="18" r="3"></circle>
+              <circle cx="19" cy="18" r="3"></circle>
+              <path d="M12 18V8l3-3h4"></path>
+              <path d="M8 18l4-7"></path>
+            </svg>
+          </div>
+          <h3>Sepeda Motor</h3>
+          <p>Pengiriman motor bebek, matic, hingga sport. Packing pelindung bodi dan pengikatan kuat di atas geladak
+            kapal.</p>
+          <div class="service-meta">
+            <span>Roda Dua Terlindungi</span> ➔
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="8" rx="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h3>Mobil &amp; Kendaraan Lain</h3>
+          <p>Pengiriman mobil pribadi, minibus, hingga pickup logistik via kapal kargo laut dengan asuransi dan prosedur
+            resmi.</p>
+          <div class="service-meta">
+            <span>Roda Empat &amp; Niaga</span> ➔
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3: MITRA STRATEGIS & LAYANAN KHUSUS LEMBATA
+  ============================================================ -->
+  <section id="special-lembata" class="section-wrap bg-surface-tint">
+    <div class="container">
+      <div style="text-align:center;max-width:720px;margin-inline:auto;">
+        <span class="section-label">Mitra Strategis &amp; Layanan Khusus</span>
+        <h2 class="section-title">Kemitraan JNE &amp; <em>Layanan Lembata</em></h2>
+        <p class="section-sub" style="margin-inline:auto;">
+          Solusi praktis dan efisien untuk pengiriman ke Lembata serta arus balik dari Lembata menuju Jakarta.
+        </p>
+      </div>
+
+      <div class="special-card-wrap">
+        <!-- Lembata Card 1: JNE Lembata Partnership -->
+        <div class="special-card reveal">
+          <span class="special-badge-top">Door to Door</span>
+          <h3>Kemitraan dengan JNE Lembata</h3>
+          <p>
+            Kini kirim barang ke Lembata tidak perlu lagi repot antre jemput barang di pelabuhan atau gudang penumpukan.
+            Melalui kerjasama resmi dengan JNE Lembata, paket diantar langsung sampai depan pagar rumah Anda!
+          </p>
+
+          <ul class="special-highlights">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Diantar Langsung:</strong> Paket tiba di depan rumah (Door to Door).</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Biaya Tambahan Sangat Ringan:</strong> Hanya <strong>+Rp1.000 / kg</strong>.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Ketentuan Minimal:</strong> Minimal pengiriman 10 kg saja.</span>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/6281236826241?text=Halo%20JNE%20Lembata%2C%20saya%20ingin%20tanya%20layanan%20Door%20to%20Door%20Adonara%20Express"
+            target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;">
+            Hubungi CS JNE Lembata (0812-3682-6241)
+          </a>
+        </div>
+
+        <!-- Lembata Card 2: Lembata ke Jakarta -->
+        <div class="special-card reveal reveal-delay-1">
+          <span class="special-badge-top" style="background:#07244c;">Arus Balik</span>
+          <h3>Pengiriman Khusus Lembata ➔ Jakarta</h3>
+          <p>
+            Membantu UMKM, titipan hasil bumi, dan barang keluarga dari Lembata menuju ibu kota Jakarta dengan tarif
+            hemat dan terjamin aman.
+          </p>
+
+          <div class="location-box">
+            <strong>📍 Drop Point &amp; Kantor Lembata:</strong>
+            Percetakan Baliho Mexantia Media, Lamahora-Lewoleba Timur <br>
+            <span style="font-size:0.8rem;color:var(--text-muted);">(Samping Barat Pagar Kantor Bupati-Akelohe, Kec.
+              Nubatukan, Kab. Lembata)</span>
+          </div>
+
+          <ul class="special-highlights">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Ketentuan Muatan:</strong> Minimal berat 10 kg.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Penanggung Jawab Kantor:</strong> Bpk. Oteng (Lembata).</span>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/6289680948899?text=Halo%20Pak%20Oteng%20Kantor%20Lembata%2C%20saya%20ingin%20kirim%20barang%20dari%20Lembata%20ke%20Jakarta"
+            target="_blank" rel="noopener" class="btn btn-outline" style="width:100%;">
+            Kontak Kantor Lembata (0896-8094-8899)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4: PERBANDINGAN TARIF & LAYANAN KARGO (KM TIDAR)
+  ============================================================ -->
+  <section id="pricing" class="section-wrap">
+    <div class="container">
+      <div style="text-align:center;max-width:750px;margin-inline:auto;">
+        <span class="section-label">Perbandingan Tarif &amp; Layanan</span>
+        <h2 class="section-title">Kenapa Memilih <em>Adonara Express?</em></h2>
+        <p class="section-sub" style="margin-inline:auto;">
+          Transparan dan lebih hemat! Berikut adalah perbandingan riil tarif dan fasilitas kargo via KM Tidar rute
+          Jakarta ke NTT.
+        </p>
+      </div>
+
+      <!-- Comparison Cards -->
+      <div class="comparison-grid">
+        <!-- Standard Pelni -->
+        <div class="compare-card reveal">
+          <div class="compare-header">
+            <span class="compare-provider">Pelni (Tarif Standar)</span>
+            <div class="compare-price">
+              Rp22.000 <span>/ kg</span>
+            </div>
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-top:0.4rem;">
+              Tarif dasar reguler pelabuhan
+            </div>
+          </div>
+
+          <ul class="compare-list">
+            <li class="compare-item">
+              <svg class="icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span>Tujuan hanya sampai pelabuhan <strong>Larantuka</strong>.</span>
+            </li>
+            <li class="compare-item">
+              <svg class="icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span><strong>Masih dikenakan biaya tambahan</strong> (biaya buruh &amp; bongkar muat).</span>
+            </li>
+            <li class="compare-item">
+              <svg class="icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span>Overload tetap dihitung flat <strong>Rp22.000 / kg</strong> tanpa potongan.</span>
+            </li>
+            <li class="compare-item">
+              <svg class="icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span>Penerima harus mengurus sendiri penjemputan barang di dermaga.</span>
+            </li>
+          </ul>
+
+          <div style="text-align:center;font-size:0.85rem;color:var(--text-muted);">
+            Total biaya akhir sering kali membengkak akibat biaya buruh lokal.
+          </div>
+        </div>
+
+        <!-- Adonara Express (Winner) -->
+        <div class="compare-card winner reveal reveal-delay-1">
+          <div class="winner-ribbon">⭐ LEBIH HEMAT &amp; PASTI</div>
+
+          <div class="compare-header">
+            <span class="compare-provider">Adonara Express</span>
+            <div class="compare-price" style="color:var(--brand-accent);">
+              Rp20.000 <span>/ kg</span>
+            </div>
+            <div class="compare-saving-tag">
+              Hemat Rp2.000 per Kilogram!
+            </div>
+          </div>
+
+          <ul class="compare-list">
+            <li class="compare-item">
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Tujuan sampai <strong>Adonara &amp; Solor bersih</strong> (menjangkau pulau tujuan).</span>
+            </li>
+            <li class="compare-item">
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Harga All-In / Bersih</strong> — Tanpa pungutan biaya buruh tambahan sama sekali.</span>
+            </li>
+            <li class="compare-item">
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Biaya overload <strong>lebih ekonomis dan pasti</strong>.</span>
+            </li>
+            <li class="compare-item">
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Opsi lanjutan <strong>Door to Door JNE</strong> ke Lembata langsung ke alamat rumah.</span>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/6285210007544?text=Halo%20Adonara%20Express%2C%20saya%20ingin%20kirim%20barang%20dengan%20tarif%20hemat%20Rp20.000%2Fkg"
+            target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;">
+            Kirim Barang Lebih Hemat Sekarang
+          </a>
+        </div>
+      </div>
+
+      <!-- Ongkir Calculator Widget -->
+      <div class="calculator-box">
+        <div class="calc-header">
+          <span class="badge" style="margin-bottom:0.4rem;">Simulasi Cepat</span>
+          <h3>Kalkulator Estimasi Ongkir Kargo Laut</h3>
+          <p style="font-size:0.9rem;color:var(--text-muted);">Masukkan estimasi berat barang Anda untuk melihat
+            perbandingan penghematan nyata bersama Adonara Express.</p>
+        </div>
+
+        <div class="calc-inputs-grid">
+          <div class="calc-group">
+            <label for="calcWeight">Berat Muatan (Kilogram)</label>
+            <input type="number" id="calcWeight" class="calc-input" value="30" min="5" placeholder="Contoh: 30" />
+          </div>
+
+          <div class="calc-group">
+            <label for="calcDest">Rute / Tujuan</label>
+            <select id="calcDest" class="calc-select">
+              <option value="regular">Jakarta ➔ Adonara / Solor (All-In Bersih)</option>
+              <option value="lembata-door">Jakarta ➔ Lembata (Door to Door +JNE)</option>
+              <option value="kupang-maumere">Jakarta ➔ Maumere / Larantuka / Kupang</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <button type="button" class="btn btn-primary" id="btnCalculate" style="width:100%;">
+              Hitung Ongkir
+            </button>
+          </div>
+        </div>
+
+        <div class="calc-result-bar">
+          <div>
+            <div class="calc-result-text">
+              Estimasi Tarif Adonara Express: <strong id="calcResultLabel" style="color:var(--text-title);">Rp600.000
+                (Hemat Rp60.000 + Bebas Buruh)</strong>
+            </div>
+            <span style="font-size:0.8rem;color:var(--text-muted);" id="calcDetailNote">Sudah termasuk biaya handling
+              dan tanpa pungutan liar di pelabuhan.</span>
+          </div>
+          <div class="calc-result-total" id="calcTotalDisplay">
+            Rp600.000
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5: JADWAL PENGIRIMAN & KAPAL
+  ============================================================ -->
+  <section id="schedule" class="section-wrap bg-surface-tint">
+    <div class="container">
+      <div style="text-align:center;max-width:720px;margin-inline:auto;">
+        <span class="section-label">Jadwal Keberangkatan</span>
+        <h2 class="section-title">Jadwal Pengiriman <em>Agustus 2026</em></h2>
+        <p class="section-sub" style="margin-inline:auto;">
+          Pastikan muatan Anda tiba di gudang Jakarta sebelum batas waktu (Closing Cargo) agar masuk dalam manifes
+          keberangkatan kapal.
+        </p>
+      </div>
+
+      <div class="schedule-grid">
+        <!-- Schedule 1: Pelni -->
+        <div class="schedule-card reveal">
+          <div class="schedule-type">Jalur Laut Utama</div>
+          <h3>Via Kapal Pelni</h3>
+
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Tanggal Berangkat:</span>
+            <strong>01 Agustus 2026</strong>
+          </div>
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Pelabuhan Asal:</span>
+            <span>Tanjung Priok, Jakarta</span>
+          </div>
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Rute Singgah:</span>
+            <span>Maumere, Larantuka, NTT</span>
+          </div>
+
+          <div class="closing-badge">
+            ⚠️ Closing Cargo: 30 Juli 2026
+          </div>
+        </div>
+
+        <!-- Schedule 2: Tol Laut -->
+        <div class="schedule-card reveal reveal-delay-1">
+          <div class="schedule-type">Kargo Logistik Laut</div>
+          <h3>Via Tol Laut</h3>
+
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Tanggal Berangkat:</span>
+            <strong>04 Agustus 2026</strong>
+          </div>
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Pelabuhan Asal:</span>
+            <span>Pelabuhan Jakarta</span>
+          </div>
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Spesialisasi:</span>
+            <span>Muatan Berat, Perabot, Logistik</span>
+          </div>
+
+          <div class="closing-badge">
+            ⚠️ Closing Cargo: 01 Agustus 2026
+          </div>
+        </div>
+
+        <!-- Schedule 3: Keberangkatan Alternatif -->
+        <div class="schedule-card reveal reveal-delay-2" style="border-color:var(--brand-accent);">
+          <div class="schedule-type">Jadwal Tambahan / Alternatif</div>
+          <h3>Keberangkatan Alternatif</h3>
+
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Tanggal Berangkat:</span>
+            <strong style="color:var(--brand-accent);">22 Agustus 2026</strong>
+          </div>
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Rute Menyeluruh:</span>
+            <span>Jakarta ➔ Maumere, Larantuka, Adonara, Solor &amp; Lembata</span>
+          </div>
+          <div class="schedule-detail-row">
+            <span style="color:var(--text-muted);">Closing Date:</span>
+            <strong style="color:#ef4444;">20 Agustus 2026 (Jam 11:00 WIB)</strong>
+          </div>
+
+          <div class="closing-badge"
+            style="background:var(--brand-accent-pale);border-color:var(--border-accent);color:var(--brand-accent);">
+            📅 Kuota Muatan Terbuka
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2.5rem;text-align:center;">
+        <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1rem;">
+          *Jadwal dapat disesuaikan dengan kondisi cuaca BMKG dan jadwal resmi PT Pelni. Silakan konfirmasi berkala ke
+          admin Adonara Express.
+        </p>
+        <a href="https://wa.me/6282258408160?text=Halo%20Admin%20Adonara%20Express%2C%20saya%20ingin%20cek%20update%20jadwal%20kapal%20terkini"
+          target="_blank" rel="noopener" class="btn btn-outline">
+          Konfirmasi Jadwal Terkini via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6: ADONARA TOUR & TRAVEL
+  ============================================================ -->
+  <section id="tour-travel" class="section-wrap">
+    <div class="container">
+      <div style="text-align:center;max-width:750px;margin-inline:auto;">
+        <span class="section-label">Layanan Wisata &amp; Rental</span>
+        <h2 class="section-title">Adonara <em>Tour &amp; Travel</em></h2>
+        <p class="section-sub" style="margin-inline:auto;">
+          Jelajahi eksotisme Pulau Adonara dengan paket hemat liburan keliling pulau, didukung armada prima dan pemandu
+          lokal berpengalaman.
+        </p>
+      </div>
+
+      <div class="tour-fleet-grid">
+        <!-- Car 1: Toyota Calya -->
+        <div class="car-card reveal">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80"
+              alt="Toyota Calya Hitam 7-Seater Adonara Express" />
+            <span class="car-tag">7 Penumpang · Warna Hitam</span>
+          </div>
+          <div class="car-body">
+            <h3>Toyota Calya (Hitam)</h3>
+            <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.6;">
+              Pilihan ideal untuk keluarga atau rombongan kecil. Gesit, irit, dan nyaman untuk menyusuri jalanan kota
+              hingga perbukitan Adonara.
+            </p>
+            <div class="car-specs">
+              <span class="car-spec-item">👥 Kapasitas 7 Seaters</span>
+              <span class="car-spec-item">❄️ AC Dingin Double Blower</span>
+              <span class="car-spec-item">⛽ BBM Efisien</span>
+              <span class="car-spec-item">🧳 Bagasi Fleksibel</span>
+            </div>
+            <a href="https://wa.me/6285210007544?text=Halo%20Adonara%20Tour%20%26%20Travel%2C%20saya%20ingin%20booking%20mobil%20Toyota%20Calya"
+              target="_blank" rel="noopener" class="btn btn-outline" style="width:100%;">
+              Sewa Toyota Calya
+            </a>
+          </div>
+        </div>
+
+        <!-- Car 2: Suzuki XL7 -->
+        <div class="car-card reveal reveal-delay-1">
+          <div class="car-img-wrap">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80"
+              alt="Suzuki XL7 Hitam 7-Seater Adonara Express" />
+            <span class="car-tag">7 Penumpang · Warna Hitam</span>
+          </div>
+          <div class="car-body">
+            <h3>Suzuki XL7 (Hitam)</h3>
+            <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.6;">
+              SUV tangguh dengan ground clearance tinggi, siap melibas segala medan wisata alam Adonara dengan
+              kenyamanan premium.
+            </p>
+            <div class="car-specs">
+              <span class="car-spec-item">👥 Kapasitas 7 Seaters</span>
+              <span class="car-spec-item">🚙 SUV Tangguh &amp; Gagah</span>
+              <span class="car-spec-item">🎶 Audio Multimedia Mantap</span>
+              <span class="car-spec-item">🛡️ Suspensi Empuk &amp; Aman</span>
+            </div>
+            <a href="https://wa.me/6285210007544?text=Halo%20Adonara%20Tour%20%26%20Travel%2C%20saya%20ingin%20booking%20mobil%20Suzuki%20XL7"
+              target="_blank" rel="noopener" class="btn btn-outline" style="width:100%;">
+              Sewa Suzuki XL7
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour Advantages / Perks -->
+      <div class="tour-perks-grid">
+        <div class="tour-perk">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+          <span>Seluruh Wilayah Adonara</span>
+        </div>
+        <div class="tour-perk">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 14 14"></polyline>
+          </svg>
+          <span>Layanan Siaga 24/7</span>
+        </div>
+        <div class="tour-perk">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Liburan Hemat &amp; Terencana</span>
+        </div>
+        <div class="tour-perk">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Pemandu Ramah &amp; Berpengalaman</span>
+        </div>
+        <div class="tour-perk">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+            </path>
+          </svg>
+          <span>Wisata Alam Indah &amp; Terjaga</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7: KONTAK, ALAMAT & LOKASI RESMI
+  ============================================================ -->
+  <section id="contact" class="section-wrap bg-surface-tint">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Contact Information & Addresses -->
+        <div>
+          <span class="section-label">Alamat Kantor &amp; Layanan</span>
+          <h2 class="section-title">Hubungi <em>Adonara Express</em></h2>
+          <p class="section-sub" style="margin-bottom:2rem;">
+            Tim customer care kami siap memberikan informasi tarif, pemesanan kargo, penjemputan barang, serta
+            konsultasi armada tour &amp; travel.
+          </p>
+
+          <div class="contact-branches">
+            <!-- Jakarta Head Office -->
+            <div class="branch-card">
+              <span class="branch-badge">Head Office &amp; Gudang Jakarta</span>
+              <h4>Gudang Pusat Matraman</h4>
+              <p>
+                <strong>Jl. Tegalan 1L No. 96.B, Palmeriam, Matraman, Jakarta Timur</strong> <br>
+                (RT 11 / RW 04, Palmeriam, Jakarta Timur)
+              </p>
+              <div style="font-size:0.84rem;color:var(--brand-accent);">
+                📍 Titik drop kargo utama rute Jakarta ➔ Seluruh NTT
+              </div>
+            </div>
+
+            <!-- Lembata Branch -->
+            <div class="branch-card">
+              <span class="branch-badge" style="color:#22c55e;">Kantor Drop Point Lembata</span>
+              <h4>Percetakan Baliho Mexantia Media</h4>
+              <p>
+                <strong>Lamahora - Lewoleba Timur</strong> <br>
+                (Samping Barat Pagar Kantor Bupati - Akelohe, Kec. Nubatukan, Kab. Lembata, NTT)
+              </p>
+              <div style="font-size:0.84rem;color:var(--text-muted);">
+                PIC: Bpk. Oteng (Layanan Pengiriman Lembata ➔ Jakarta)
+              </div>
+            </div>
+          </div>
+
+          <!-- Official WhatsApp Numbers -->
+          <div style="margin-top:1.8rem;">
+            <h5
+              style="font-size:0.92rem;margin-bottom:0.8rem;color:var(--text-title);text-transform:uppercase;letter-spacing:0.05em;">
+              Nomor Kontak &amp; WhatsApp Resmi:
+            </h5>
+
+            <div class="contact-phone-grid">
+              <a href="https://wa.me/6285210007544" target="_blank" rel="noopener" class="phone-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z" />
+                </svg>
+                <div>
+                  <strong style="display:block;">0852-1000-7544</strong>
+                  <span style="font-size:0.75rem;color:var(--text-muted);">Pemesanan &amp; Layanan Jakarta</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/6282258408160" target="_blank" rel="noopener" class="phone-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z" />
+                </svg>
+                <div>
+                  <strong style="display:block;">0822-5840-8160</strong>
+                  <span style="font-size:0.75rem;color:var(--text-muted);">Konsultasi Kargo &amp; Tiket</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/6281236826241" target="_blank" rel="noopener" class="phone-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z" />
+                </svg>
+                <div>
+                  <strong style="display:block;">0812-3682-6241</strong>
+                  <span style="font-size:0.75rem;color:var(--text-muted);">Layanan JNE Lembata</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/6289680948899" target="_blank" rel="noopener" class="phone-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z" />
+                </svg>
+                <div>
+                  <strong style="display:block;">0896-8094-8899</strong>
+                  <span style="font-size:0.75rem;color:var(--text-muted);">Oteng - Kantor Lembata</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Social Media Channels in Contact Section -->
+            <div style="margin-top:1.8rem;">
+              <h5
+                style="font-size:0.85rem;margin-bottom:0.75rem;color:var(--text-title);text-transform:uppercase;letter-spacing:0.05em;">
+                Media Sosial Resmi Kami:
+              </h5>
+              <div class="footer-socials" style="margin-top:0;">
+                <a href="https://instagram.com/adonaraexpress" target="_blank" rel="noopener" class="social-link"
+                  data-brand="instagram" aria-label="Instagram Adonara Express" title="Instagram @adonaraexpress">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.265.058-1.645.07-4.85.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.197.157 3.355.673 1.955 2.073.555 3.473.038 5.315-.047 7.17-.106 8.45-.12 8.858-.12 12c0 3.142.014 3.55.072 4.83.085 1.855.601 3.697 2.001 5.097 1.4 1.4 3.242 1.916 5.097 2.001C8.45 23.986 8.858 24 12 24c3.142 0 3.55-.014 4.83-.072 1.855-.085 3.697-.601 5.097-2.001 1.4-1.4 1.916-3.242 2.001-5.097.058-1.28.072-1.688.072-4.83 0-3.142-.014-3.55-.072-4.83C23.843 5.315 23.327 3.473 21.927 2.073 20.527.673 18.685.157 16.83.072 15.55.014 15.142 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                  </svg>
+                </a>
+                <a href="https://tiktok.com/@christianieulalia" target="_blank" rel="noopener" class="social-link"
+                  data-brand="tiktok" aria-label="TikTok Adonara Express" title="TikTok @christianieulalia">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z" />
+                  </svg>
+                </a>
+                <a href="https://facebook.com/adonaraexpress" target="_blank" rel="noopener" class="social-link"
+                  data-brand="facebook" aria-label="Facebook Adonara Express" title="Facebook Adonara Express">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+                  </svg>
+                </a>
+                <a href="https://wa.me/6285210007544" target="_blank" rel="noopener" class="social-link"
+                  data-brand="whatsapp" aria-label="WhatsApp Adonara Express" title="WhatsApp 0852-1000-7544">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z" />
+                  </svg>
+                </a>
+                <a href="https://youtube.com/" target="_blank" rel="noopener" class="social-link" data-brand="youtube"
+                  aria-label="YouTube Adonara Express" title="YouTube Adonara Express">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fast Contact Form -->
+        <div class="contact-form-card reveal">
+          <span class="badge" style="margin-bottom:0.5rem;">Respon Cepat</span>
+          <h3 style="margin-bottom:0.8rem;">Formulir Tanya Kiriman</h3>
+          <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:1.5rem;">
+            Isi formulir singkat di bawah untuk langsung terhubung dengan admin kami via WhatsApp beserta detail kiriman
+            Anda.
+          </p>
+
+          <form id="fastInquiryForm">
+            <div class="form-group">
+              <label for="userName">Nama Lengkap</label>
+              <input type="text" id="userName" class="form-control" placeholder="Nama Anda" required />
+            </div>
+
+            <div class="form-group">
+              <label for="cargoType">Jenis Muatan</label>
+              <select id="cargoType" class="form-control" required>
+                <option value="Barang Paket / Titipan Keluarga">Barang Paket / Titipan Keluarga</option>
+                <option value="Barang Pindahan Rumah/Kos">Barang Pindahan Rumah / Kos</option>
+                <option value="Sepeda Motor">Sepeda Motor</option>
+                <option value="Mobil / Kendaraan">Mobil / Kendaraan</option>
+                <option value="Booking Rental / Tour Adonara">Booking Rental / Tour Adonara (Calya / XL7)</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="destCity">Kota Tujuan di NTT</label>
+              <select id="destCity" class="form-control" required>
+                <option value="Adonara">Adonara</option>
+                <option value="Solor">Solor</option>
+                <option value="Lembata (Door to Door via JNE)">Lembata (Door to Door via JNE)</option>
+                <option value="Lembata ke Jakarta (Arus Balik)">Lembata ke Jakarta (Arus Balik)</option>
+                <option value="Larantuka">Larantuka</option>
+                <option value="Maumere">Maumere</option>
+                <option value="Kupang">Kupang</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="userNotes">Estimasi Berat (Kg) / Detail Muatan</label>
+              <textarea id="userNotes" class="form-control" rows="3"
+                placeholder="Contoh: Kirim 2 dus pakaian seberat 35 kg ke Adonara..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:0.95rem;">
+              Kirim ke WhatsApp Admin ➔
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <div class="footer-logo">Adonara Express</div>
+          <div class="footer-tag">Cepat · Aman · Amanah</div>
+          <p class="footer-desc">
+            Jasa Ekspedisi Kargo Laut &amp; Darat serta Tour &amp; Travel terpercaya rute Jakarta ke Nusa Tenggara Timur
+            (Maumere, Larantuka, Adonara, Solor, Lembata, Kupang). Kirim bukan cuma barang, tapi rasa aman.
+          </p>
+
+          <div
+            style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-title);margin-bottom:0.6rem;">
+            Ikuti Kami di Media Sosial:
+          </div>
+          <div class="footer-socials" aria-label="Media Sosial Adonara Express">
+            <!-- Instagram -->
+            <a href="https://instagram.com/adonaraexpress" target="_blank" rel="noopener" class="social-link"
+              data-brand="instagram" aria-label="Instagram Adonara Express" title="Instagram @adonaraexpress">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.265.058-1.645.07-4.85.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.197.157 3.355.673 1.955 2.073.555 3.473.038 5.315-.047 7.17-.106 8.45-.12 8.858-.12 12c0 3.142.014 3.55.072 4.83.085 1.855.601 3.697 2.001 5.097 1.4 1.4 3.242 1.916 5.097 2.001C8.45 23.986 8.858 24 12 24c3.142 0 3.55-.014 4.83-.072 1.855-.085 3.697-.601 5.097-2.001 1.4-1.4 1.916-3.242 2.001-5.097.058-1.28.072-1.688.072-4.83 0-3.142-.014-3.55-.072-4.83C23.843 5.315 23.327 3.473 21.927 2.073 20.527.673 18.685.157 16.83.072 15.55.014 15.142 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@christianieulalia" target="_blank" rel="noopener" class="social-link"
+              data-brand="tiktok" aria-label="TikTok Adonara Express" title="TikTok @christianieulalia">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z" />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/adonaraexpress" target="_blank" rel="noopener" class="social-link"
+              data-brand="facebook" aria-label="Facebook Adonara Express" title="Facebook Adonara Express">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6285210007544" target="_blank" rel="noopener" class="social-link"
+              data-brand="whatsapp" aria-label="WhatsApp Adonara Express" title="WhatsApp 0852-1000-7544">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.94 11.94 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.125-6.21-3.52-8.43zM12.06 21.89h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.89 9.89 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.91a9.85 9.85 0 0 1 2.9 7c0 5.46-4.44 9.91-9.9 9.91z" />
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/" target="_blank" rel="noopener" class="social-link" data-brand="youtube"
+              aria-label="YouTube Adonara Express" title="YouTube Adonara Express">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+
+            <!-- X / Twitter -->
+            <a href="https://x.com/" target="_blank" rel="noopener" class="social-link" data-brand="x"
+              aria-label="X (Twitter) Adonara Express" title="X (Twitter) Adonara Express">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigasi Layanan -->
+        <div class="footer-col">
+          <h5>Layanan Kami</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Barang Paket &amp; Titipan</a></li>
+            <li><a href="#services">Barang Pindahan</a></li>
+            <li><a href="#services">Sepeda Motor &amp; Mobil</a></li>
+            <li><a href="#special-lembata">JNE Door to Door Lembata</a></li>
+            <li><a href="#tour-travel">Adonara Tour &amp; Travel</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Rute Wilayah -->
+        <div class="footer-col">
+          <h5>Rute Nusa Tenggara Timur</h5>
+          <ul class="footer-links">
+            <li><a href="#pricing">Jakarta ➔ Maumere</a></li>
+            <li><a href="#pricing">Jakarta ➔ Larantuka</a></li>
+            <li><a href="#pricing">Jakarta ➔ Adonara</a></li>
+            <li><a href="#pricing">Jakarta ➔ Solor</a></li>
+            <li><a href="#special-lembata">Jakarta ➔ Lembata</a></li>
+            <li><a href="#pricing">Jakarta ➔ Kupang</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Alamat Singkat -->
+        <div class="footer-col">
+          <h5>Head Office Jakarta</h5>
+          <p style="font-size:0.86rem;color:var(--text-muted);line-height:1.7;margin-bottom:0.8rem;">
+            Jl. Tegalan 1L No. 96.B, Palmeriam, Matraman, Jakarta Timur / RT 11/04.
+          </p>
+          <div style="font-size:0.84rem;color:var(--brand-accent);font-weight:600;">
+            WhatsApp: 0852-1000-7544
+          </div>
+          <div style="font-size:0.84rem;color:var(--text-muted);margin-top:0.3rem;">
+            Kantor Lembata: 0896-8094-8899
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Adonara Express. Semua Hak Cipta Dilindungi. Slogan: "Kirim bukan cuma barang, tapi rasa aman."
+        </p>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#hero" style="color:var(--brand-accent);">Kembali ke Atas ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a id="wa-floating"
+    href="https://wa.me/6285210007544?text=Halo%20Adonara%20Express%2C%20saya%20ingin%20konsultasi%20pengiriman%20kargo"
+    target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path
+        d="M16.004 0C7.164 0 0 7.163 0 16.004c0 2.822.738 5.47 2.03 7.773L.07 31.93l8.33-1.937a15.95 15.95 0 007.604 1.934C24.843 31.927 32 24.763 32 15.923 32 7.163 24.843 0 16.004 0zm0 29.242a13.247 13.247 0 01-6.76-1.843l-.484-.29-5.015 1.165 1.197-4.891-.317-.504a13.198 13.198 0 01-2.03-7.072C2.595 8.613 8.611 2.597 16.004 2.597c7.392 0 13.332 5.94 13.332 13.33 0 7.392-5.94 13.315-13.332 13.315zm7.316-9.978c-.4-.2-2.37-1.168-2.738-1.303-.367-.134-.635-.2-.903.2-.268.4-1.034 1.303-1.268 1.571-.234.267-.467.3-.867.1-.4-.2-1.688-.623-3.214-1.981-1.188-1.058-1.99-2.368-2.223-2.768-.234-.4-.025-.618.175-.817.18-.178.4-.467.6-.7.2-.232.267-.4.4-.667.134-.267.067-.5-.033-.7-.1-.2-.903-2.169-1.236-2.97-.334-.801-.667-.668-.903-.681-.234-.013-.5-.016-.768-.016s-.7.1-1.067.5c-.367.4-1.4 1.37-1.4 3.337s1.434 3.87 1.634 4.136c.2.268 2.822 4.306 6.836 6.04.956.411 1.702.656 2.284.84.959.303 1.832.26 2.522.158.77-.114 2.37-.97 2.705-1.906.334-.935.334-1.736.234-1.903-.1-.167-.367-.267-.767-.467z" />
+    </svg>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Kembali ke Atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    'use strict';
+
+    /* ─── 1. DARK / LIGHT MODE CONTROLLER ─────────────────────── */
+    (function initTheme() {
+      const toggleBtn = document.getElementById('themeToggleBtn');
+      const iconSun = toggleBtn.querySelector('.icon-sun');
+      const iconMoon = toggleBtn.querySelector('.icon-moon');
+      const root = document.documentElement;
+
+      // Saved preference or system preference
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme ? savedTheme : (systemPrefersDark ? 'dark' : 'light');
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        if (theme === 'dark') {
+          iconSun.style.display = 'block';
+          iconMoon.style.display = 'none';
+        } else {
+          iconSun.style.display = 'none';
+          iconMoon.style.display = 'block';
+        }
+      }
+
+      applyTheme(initialTheme);
+
+      toggleBtn.addEventListener('click', () => {
+        const currentTheme = root.getAttribute('data-theme') || 'dark';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+      });
+    })();
+
+    /* ─── 2. NAVBAR SCROLL EFFECT & ACTIVE LINKS ─────────────── */
+    (function initNavbar() {
+      const navbar = document.getElementById('navbar');
+      const links = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('section[id]');
+      const bttBtn = document.getElementById('back-to-top');
+
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+
+        // Navbar blur on scroll
+        if (scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+
+        // Back to top button visibility
+        if (scrollY > 400) {
+          bttBtn.classList.add('show');
+        } else {
+          bttBtn.classList.remove('show');
+        }
+
+        // Active link highlight
+        let currentId = '';
+        sections.forEach(sec => {
+          const top = sec.offsetTop - 140;
+          if (scrollY >= top) {
+            currentId = sec.getAttribute('id');
+          }
+        });
+
+        links.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+        });
+      }, { passive: true });
+
+      bttBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+
+    /* ─── 3. MOBILE MENU ─────────────────────────────────────── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function closeMobile() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    /* ─── 4. REVEAL ANIMATIONS ON SCROLL ─────────────────────── */
+    (function initReveal() {
+      const items = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      items.forEach(el => io.observe(el));
+    })();
+
+    /* ─── 5. ONGKIR CALCULATOR SIMULATION ─────────────────────── */
+    (function initCalc() {
+      const weightInput = document.getElementById('calcWeight');
+      const destSelect = document.getElementById('calcDest');
+      const calcBtn = document.getElementById('btnCalculate');
+      const totalDisplay = document.getElementById('calcTotalDisplay');
+      const resultLabel = document.getElementById('calcResultLabel');
+      const detailNote = document.getElementById('calcDetailNote');
+
+      function formatRupiah(num) {
+        return 'Rp' + num.toLocaleString('id-ID');
+      }
+
+      function updateCalculation() {
+        const weight = Math.max(parseFloat(weightInput.value) || 10, 10);
+        const routeType = destSelect.value;
+
+        let ratePerKg = 20000;
+        let standardPelni = 22000;
+        let extraText = '';
+
+        if (routeType === 'lembata-door') {
+          // Adonara Express + JNE door to door (+1000/kg)
+          ratePerKg = 21000;
+          const totalCost = weight * ratePerKg;
+          const pelniCost = weight * standardPelni;
+          const savings = pelniCost - totalCost;
+
+          totalDisplay.textContent = formatRupiah(totalCost);
+          resultLabel.textContent = `${formatRupiah(totalCost)} (Diantar sampai depan pintu rumah)`;
+          detailNote.textContent = `Tarif kargo All-In + Door-to-Door JNE Lembata (+Rp1.000/kg). Tanpa perlu repot ke pelabuhan!`;
+        } else if (routeType === 'kupang-maumere') {
+          ratePerKg = 20000;
+          const totalCost = weight * ratePerKg;
+          const savings = (standardPelni * weight) - totalCost;
+
+          totalDisplay.textContent = formatRupiah(totalCost);
+          resultLabel.textContent = `${formatRupiah(totalCost)} (Hemat ${formatRupiah(savings)} dibanding tarif umum)`;
+          detailNote.textContent = `Harga All-In bersih untuk rute Maumere, Larantuka & Kupang.`;
+        } else {
+          // Regular Adonara / Solor
+          ratePerKg = 20000;
+          const totalCost = weight * ratePerKg;
+          const savings = (standardPelni * weight) - totalCost;
+
+          totalDisplay.textContent = formatRupiah(totalCost);
+          resultLabel.textContent = `${formatRupiah(totalCost)} (Hemat ${formatRupiah(savings)} + Bebas Biaya Buruh)`;
+          detailNote.textContent = `Sampai Adonara & Solor bersih tanpa pungutan liar buruh pelabuhan.`;
+        }
+      }
+
+      calcBtn.addEventListener('click', updateCalculation);
+      weightInput.addEventListener('input', updateCalculation);
+      destSelect.addEventListener('change', updateCalculation);
+    })();
+
+    /* ─── 6. FAST INQUIRY FORM TO WHATSAPP ───────────────────── */
+    (function initForm() {
+      const form = document.getElementById('fastInquiryForm');
+      if (!form) return;
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('userName').value.trim();
+        const type = document.getElementById('cargoType').value;
+        const dest = document.getElementById('destCity').value;
+        const notes = document.getElementById('userNotes').value.trim();
+
+        const message = `Halo Adonara Express,\n\nNama saya: *${name}*\nJenis Layanan/Muatan: *${type}*\nKota Tujuan: *${dest}*\nKeterangan/Berat: ${notes || '-'}\n\nMohon informasi jadwal kapal terdekat dan prosedur pengirimannya. Terima kasih!`;
+        const encodedUrl = `https://wa.me/6285210007544?text=${encodeURIComponent(message)}`;
+
+        window.open(encodedUrl, '_blank');
+      });
+    })();
+
+    /* ─── 7. SMOOTH SCROLL FOR INTERNAL LINKS ─────────────────── */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#' || href === '') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const targetY = target.getBoundingClientRect().top + window.scrollY - 70;
+          window.scrollTo({ top: targetY, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
